@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript pop element from array</title>
+
+</head>
+<body>
+<h1>Javascript labs</h1>
+<h2>Lab 22 - Pop element from array</h2>
+<input id="lab22input" />
+<!--  add element to end of array -->
+<input type="button" value="Push member to array" id="somethingelse" />
+<!--  remove last element of the array -->
+<input type="button" value="Pop member from array" id="lastpop" />
+<!--  remove the first element of the array -->
+<input type="button" value="Shift member from array" id="firstshift" />
+<!--  add to the first element of the array -->
+<input type="button" value="UNShift member from array" id="firstunshift" />
+
+<p id="lab22result"></p>
+
+
+<script>
+
+
+    var myArray = [] ;
+
+    document.getElementById("somethingelse").addEventListener ('click', pushArray);
+    document.getElementById("lastpop").addEventListener ('click', popArray);
+    document.getElementById("firstshift").addEventListener ('click', firstshiftArray);
+    document.getElementById("firstunshift").addEventListener ('click', firstunshiftArray);
+
+    function display (){
+    document.getElementById("lab22result").innerHTML = myArray;
+
+    }
+
+
+    function pushArray(){
+    var userInput1 = document.getElementById("lab22input").value;
+        console.log(userInput1);
+    myArray.push(userInput1);
+    display();
+    }
+    //pop removes last element and returns that element
+    function popArray(){
+    myArray.pop();
+    display();
+    }
+    //shift removes the first element from the array
+    function firstshiftArray(){
+    myArray.shift();
+    display();
+    }
+    //UNSHIFT Adds one or more elements to the front of an array and returns the new length of the array.
+    function firstunshiftArray(){
+    var userInput1 = document.getElementById("lab22input").value;
+    myArray.unshift(userInput1);
+    display();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
