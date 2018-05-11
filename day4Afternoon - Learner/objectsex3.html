@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title> OBJECTS</title>
+
+</head>
+<body>
+
+
+<script>
+
+var person = { //////// DECLARING AN OBJECT
+    firstName: "Georgi",
+    surName: "Frenkev",
+address: {
+        street: "292929 somewhere",
+        city: "moon",
+        zipCode: "1912"
+    } //javascript will treat everything withing {} as one line
+};
+//ADDING ANOTHER PROPERTy
+person.address2 = {
+        street: "Minories",
+        city: "sun",
+        zipCode: "1899"
+}
+    console.log(person);
+
+
+
+    function theEnd (){
+        console.log("bye");
+    }
+    theEnd.language = "English";
+    console.log(theEnd.language);
+    var shoeCollection - {
+        brand: "Nike",
+        model: "Air Force",
+        price: "95",
+        created: 100,
+        sold: 36,
+        availability: function(){
+            return shoeCollection.created - shoeCollection.sold;
+        }
+    }
+
+    console.log(shoeCollection.availability())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

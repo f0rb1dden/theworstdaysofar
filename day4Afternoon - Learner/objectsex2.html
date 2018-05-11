@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title> OBJECTS</title>
+
+</head>
+<body>
+
+
+<script>
+// Better practice for declaring objects
+
+    var student = {
+    firstName: "Garry",
+    secondName: "Trotter",
+    address: { //NESTED OBJECTS ======================================================
+        street:'150 Minories',
+        city: 'London',
+        postcode: 'EC4 f5y'
+    }
+
+};
+
+console.log(student.firstName);
+console.log(student.secondName);
+//Return our object to the console
+
+console.log(student);
+
+function greeting(){ //Create a function that returns the name of the student
+
+    // THE PARAMETER WILL BE LOOKING FOR AN OBJECT
+    console.log('good morning, ' + student.firstName);
+
+}
+    greeting();
+
+
+// ADDING INFORMATION TO OUR OBJECT
+
+greeting({firstName: "Lucy", secondName: "Sam"}); //parse our own object into it
+console.log(student);
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

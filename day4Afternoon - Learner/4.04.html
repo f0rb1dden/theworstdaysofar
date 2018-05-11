@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Object</p>
+<p id="demo"></p>
+
+<script>
+    var me = {
+    firstName: "Georgi",
+    lastName : "Frenkev",
+    fullName : function (){
+       return me.firstName + " " + me.lastName;
+    }
+};
+console.log(me.fullName());
+document.getElementById("demo").innerHTML = me.fullName();
+
+
+</script>
+</body>
+</html>
